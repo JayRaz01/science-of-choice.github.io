@@ -23,12 +23,12 @@
             padding-top: 60px;
         }
         
-        h1 {
+        h1, h2 {
             color: #007bff;
             margin-bottom: 20px;
         }
 
-        h2 {
+        h3 {
             margin-top: 40px;
             color: #343a40;
         }
@@ -53,12 +53,11 @@
             margin: 0 auto;
         }
 
-        .project-card {
-            margin-bottom: 30px;
-            border: 1px solid #dee2e6;
-            border-radius: 0.25rem;
+        .section {
+            margin-bottom: 50px;
             padding: 20px;
             background-color: #ffffff;
+            border-radius: 0.25rem;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
@@ -92,10 +91,16 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#explore">Explore Topics</a>
+                    <a class="nav-link" href="#fundamentals">Fundamentals</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#intermediate">Intermediate Topics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#advanced">Advanced Topics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#toolbox">Math Toolbox</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -107,36 +112,56 @@
     <!-- Main Content -->
     <div class="container text-center">
         <h1>Welcome to Science of Choice</h1>
-        <p>Explore the depths of mathematical economics and discover projects that extend beyond theory into practical applications.</p>
-        <a href="#explore" class="btn btn-primary">Start Exploring</a>
+        <p>Explore the depths of mathematical economics and discover tools and projects that bridge theory and practice.</p>
+        <a href="#fundamentals" class="btn btn-primary">Start Exploring</a>
     </div>
 
-    <!-- Explore Topics Section -->
-    <div id="explore" class="container">
-        <h2>Explore Topics in Mathematical Economics</h2>
-        <p>Dive into the fundamentals, intermediate, and advanced topics that shape our understanding of economic behavior and decision-making.</p>
+    <!-- Fundamentals Section -->
+    <div id="fundamentals" class="container section">
+        <h2>Fundamentals</h2>
+        <p>This section covers the basic concepts and foundations of mathematical economics.</p>
         <ul class="list-group">
-            <li class="list-group-item">Fundamentals of Mathematical Economics</li>
-            <li class="list-group-item">Intermediate Concepts in Game Theory</li>
-            <li class="list-group-item">Advanced Topics in Behavioral Economics</li>
-            <!-- Add more topics as needed -->
+            <li class="list-group-item">Introduction to Mathematical Economics</li>
+            <li class="list-group-item">Basic Economic Models</li>
+            <li class="list-group-item">Utility and Preferences</li>
+            <!-- Add more fundamental topics as needed -->
         </ul>
     </div>
 
-    <!-- Projects Section -->
-    <div id="projects" class="container">
-        <h2>Showcase of Projects</h2>
-        <div class="project-card">
-            <h3>Project 1: Economic Models in Real Life</h3>
-            <p>A detailed analysis and implementation of economic models to predict consumer behavior.</p>
-            <a href="#" class="btn btn-primary">Read More</a>
-        </div>
-        <div class="project-card">
-            <h3>Project 2: Game Theory Applications</h3>
-            <p>An exploration of game theory and its application in competitive environments.</p>
-            <a href="#" class="btn btn-primary">Read More</a>
-        </div>
-        <!-- Add more projects as needed -->
+    <!-- Intermediate Topics Section -->
+    <div id="intermediate" class="container section">
+        <h2>Intermediate Topics</h2>
+        <p>Dive deeper into more complex theories and applications within mathematical economics.</p>
+        <ul class="list-group">
+            <li class="list-group-item">Game Theory</li>
+            <li class="list-group-item">Market Equilibrium</li>
+            <li class="list-group-item">Optimization Techniques</li>
+            <!-- Add more intermediate topics as needed -->
+        </ul>
+    </div>
+
+    <!-- Advanced Topics Section -->
+    <div id="advanced" class="container section">
+        <h2>Advanced Topics</h2>
+        <p>Explore advanced and cutting-edge topics in mathematical economics.</p>
+        <ul class="list-group">
+            <li class="list-group-item">Behavioral Economics</li>
+            <li class="list-group-item">Stochastic Models</li>
+            <li class="list-group-item">Advanced Game Theory</li>
+            <!-- Add more advanced topics as needed -->
+        </ul>
+    </div>
+
+    <!-- Math Toolbox Section -->
+    <div id="toolbox" class="container section">
+        <h2>Math Toolbox</h2>
+        <p>This section provides mathematical tools and techniques essential for economic analysis.</p>
+        <ul class="list-group">
+            <li class="list-group-item">Linear Algebra</li>
+            <li class="list-group-item">Calculus</li>
+            <li class="list-group-item">Probability and Statistics</li>
+            <!-- Add more tools as needed -->
+        </ul>
     </div>
 
     <!-- Footer -->
