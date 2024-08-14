@@ -1,2 +1,2 @@
-# science-of-choice.github.io
+# the-governing-dynamics.github.io
  
