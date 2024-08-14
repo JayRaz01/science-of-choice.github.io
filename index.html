@@ -6,7 +6,7 @@
     <title>The Governing Dynamics</title>
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -18,36 +18,55 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+            background-color: #f4f4f4;
+            color: #333333;
             padding-top: 60px;
         }
-        
+
         h1, h2 {
-            color: #007bff;
+            font-family: 'Montserrat', sans-serif;
+            color: #17a2b8;
             margin-bottom: 20px;
         }
 
         h3 {
+            font-family: 'Montserrat', sans-serif;
             margin-top: 40px;
-            color: #343a40;
+            color: #1a1a1a;
         }
 
         .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-            transition: 0.3s;
+            background-color: #ff6f61;
+            border-color: #ff6f61;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
         }
-        
+
         .btn-primary:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
+            background-color: #e05a50;
+            transform: translateY(-2px);
         }
 
         .navbar {
-            margin-bottom: 50px;
+            background-color: #ffffff;
+            border-bottom: 2px solid #17a2b8;
         }
-        
+
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            color: #17a2b8;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #1a1a1a;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ff6f61;
+        }
+
         .container {
             max-width: 960px;
             margin: 0 auto;
@@ -55,24 +74,37 @@
 
         .section {
             margin-bottom: 50px;
-            padding: 20px;
+            padding: 30px;
             background-color: #ffffff;
-            border-radius: 0.25rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #1a1a1a;
+            color: #ffffff;
             padding: 20px 0;
             text-align: center;
             margin-top: 50px;
         }
-        
+
+        footer a {
+            color: #17a2b8;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ff6f61;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
                 font-size: 24px;
+            }
+
+            .section {
+                padding: 20px;
             }
         }
     </style>
@@ -80,7 +112,7 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="#">The Governing Dynamics</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -534,7 +566,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Science of Choice. All Rights Reserved.</p>
+        <p>&copy; 2024 The Governing Dynamics. All Rights Reserved.</p>
         <p>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
