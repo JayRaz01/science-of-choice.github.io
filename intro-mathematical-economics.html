@@ -24,32 +24,12 @@
         }
         
         .left-align {
-            text-align: left;
+            text-align: left !important; /* Force left alignment */
             margin: 0 auto;
             padding: 20px;
-            max-width: 960px; /* Optional: Limit the width of the content */
+            max-width: 960px;
         }
-
-        .left-align h1, 
-        .left-align h2, 
-        .left-align h3, 
-        .left-align h4, 
-        .left-align h5, 
-        .left-align p, 
-        .left-align a {
-            text-align: left !important; /* Force left alignment */
-        }
-
-        /* Optional: Override Bootstrap's text-center classes if applied */
-        .left-align.text-center {
-            text-align: left !important;
-        }
-
-        .left-align .btn {
-            text-align: left;
-        }
-
-
+        
         h1 {
             font-family: 'Montserrat', sans-serif;
             color: #17a2b8;
@@ -117,7 +97,7 @@
 
     <!-- Main Content -->
     <div class="left-align">
-        <h1>Introduction to the Governing Dynamics</h1>
+        <h1 style="text-align: left;">Introduction to the Governing Dynamics</h1>
         <p>
             <em><strong>"I came to the position that mathematical analysis is not one of many ways of doing economic theory: It is the only way. Economic theory is mathematical analysis. Everything else is just pictures and talk." - R. E. Lucas, Jr. (2001)</strong></em>
         </p>        
