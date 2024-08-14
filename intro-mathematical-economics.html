@@ -115,37 +115,100 @@
             <nav id="sidebar" class="col-md-2 d-none d-md-block bg-light sidebar">
                 <div class="position-sticky">
                     <ul class="nav flex-column">
+                        <!-- Home Link -->
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
+    
+                        <!-- Fundamentals Section with Dropdown -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#fundamentals">Fundamentals</a>
+                            <a class="nav-link" data-toggle="collapse" href="#fundamentalsMenu" role="button" aria-expanded="false" aria-controls="fundamentalsMenu">
+                                Fundamentals
+                            </a>
+                            <div class="collapse" id="fundamentalsMenu">
+                                <ul class="list-unstyled">
+                                    <li><a href="intro-mathematical-economics.html" class="nav-link">Introduction to Mathematical Economics</a></li>
+                                    <li><a href="utility-preferences.html" class="nav-link">Utility and Preferences</a></li>
+                                    <li><a href="introductory-game-theory.html" class="nav-link">Introductory Game Theory</a></li>
+                                </ul>
+                            </div>
                         </li>
+    
+                        <!-- Intermediate Topics Section with Dropdown -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#intermediate">Intermediate Topics</a>
+                            <a class="nav-link" data-toggle="collapse" href="#intermediateMenu" role="button" aria-expanded="false" aria-controls="intermediateMenu">
+                                Intermediate Topics
+                            </a>
+                            <div class="collapse" id="intermediateMenu">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="nav-link">Intermediate Game Theory</a></li>
+                                    <li><a href="#" class="nav-link">Unconstrained Choice</a></li>
+                                    <li><a href="#" class="nav-link">Constrained Choice</a></li>
+                                    <li><a href="#" class="nav-link">Choice under Uncertainty</a></li>
+                                    <li><a href="#" class="nav-link">Simple Dynamics</a></li>
+                                </ul>
+                            </div>
                         </li>
+    
+                        <!-- Advanced Topics Section with Dropdown -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#advanced">Advanced Topics</a>
+                            <a class="nav-link" data-toggle="collapse" href="#advancedMenu" role="button" aria-expanded="false" aria-controls="advancedMenu">
+                                Advanced Topics
+                            </a>
+                            <div class="collapse" id="advancedMenu">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="nav-link">Advanced Game Theory</a></li>
+                                    <li><a href="#" class="nav-link">Unconstrained Choice over Time</a></li>
+                                    <li><a href="#" class="nav-link">Constrained Choice over Time</a></li>
+                                    <li><a href="#" class="nav-link">Choice over Time, under Uncertainty</a></li>
+                                    <li><a href="#" class="nav-link">Complex Dynamics</a></li>
+                                </ul>
+                            </div>
                         </li>
+    
+                        <!-- Math Toolbox Section with Dropdown -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#toolbox">Math Toolbox</a>
+                            <a class="nav-link" data-toggle="collapse" href="#toolboxMenu" role="button" aria-expanded="false" aria-controls="toolboxMenu">
+                                Math Toolbox
+                            </a>
+                            <div class="collapse" id="toolboxMenu">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="nav-link">Axioms of Logic</a></li>
+                                    <li><a href="#" class="nav-link">Set Theory</a></li>
+                                    <li><a href="#" class="nav-link">Basic Concepts in Analysis</a></li>
+                                    <li><a href="#" class="nav-link">Functions of a Single Variable</a></li>
+                                    <li><a href="#" class="nav-link">Functions of Several Variables</a></li>
+                                    <li><a href="#" class="nav-link">Static Optimization</a></li>
+                                    <li><a href="#" class="nav-link">Introduction to Differential Equations</a></li>
+                                    <li><a href="#" class="nav-link">Introduction to Linear Algebra</a></li>
+                                    <li><a href="#" class="nav-link">Probability and Statistics</a></li>
+                                    <li><a href="#" class="nav-link">Continuous-Time Optimization</a></li>
+                                    <li><a href="#" class="nav-link">Differential Equations</a></li>
+                                    <li><a href="#" class="nav-link">Advanced Linear Algebra</a></li>
+                                    <li><a href="#" class="nav-link">Stochastic Calculus and Ito's Lemma</a></li>
+                                </ul>
+                            </div>
                         </li>
+    
+                        <!-- Contact Link -->
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-
+    
             <!-- Main Content Area -->
             <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
+                <!-- Your main content goes here -->
                 <div class="container">
-                    <h1>Introduction to Mathematical Economics</h1>
-                    <p>Here you can add detailed content about the topic, including explanations, examples, and references.</p>
+                    <h1>Page Title</h1>
+                    <p>Page content...</p>
                 </div>
             </main>
         </div>
     </div>
+    
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
