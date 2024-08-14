@@ -30,9 +30,25 @@
             max-width: 960px; /* Optional: Limit the width of the content */
         }
 
-        .left-align h1, .left-align h2, .left-align p {
+        .left-align h1, 
+        .left-align h2, 
+        .left-align h3, 
+        .left-align h4, 
+        .left-align h5, 
+        .left-align p, 
+        .left-align a {
+            text-align: left !important; /* Force left alignment */
+        }
+
+        /* Optional: Override Bootstrap's text-center classes if applied */
+        .left-align.text-center {
+            text-align: left !important;
+        }
+
+        .left-align .btn {
             text-align: left;
         }
+
 
         h1 {
             font-family: 'Montserrat', sans-serif;
