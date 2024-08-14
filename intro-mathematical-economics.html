@@ -16,70 +16,137 @@
     
     <!-- Custom CSS -->
     <style>
-        .sidebar {
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
             padding-top: 60px;
-            background-color: #f8f9fa;
         }
 
-        .sidebar .nav-link {
-            font-weight: bold;
-            color: #333;
-        }
-
-        .sidebar .nav-link:hover {
+        h1 {
+            font-family: 'Montserrat', sans-serif;
             color: #17a2b8;
+            margin-bottom: 20px;
         }
 
-        main {
-            margin-left: 220px;
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 2px solid #17a2b8;
+        }
+
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            color: #17a2b8;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
             padding: 20px;
+        }
+
+        .content {
+            margin-right: 300px; /* Reserve space for sidebar */
+        }
+
+        .sidebar {
+            position: fixed;
+            right: 0;
+            top: 60px;
+            width: 280px;
+            background-color: #ffffff;
+            border-left: 2px solid #17a2b8;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            color: #17a2b8;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #1a1a1a;
+            padding: 10px 0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            color: #ff6f61;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #17a2b8;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ff6f61;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-left: none;
+                box-shadow: none;
+                margin-top: 20px;
+            }
+
+            .content {
+                margin-right: 0;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <nav id="sidebar" class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="position-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#fundamentals">Fundamentals</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#intermediate">Intermediate Topics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#advanced">Advanced Topics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#toolbox">Math Toolbox</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- Main Content Area -->
-            <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
-                <div class="container">
-                    <h1>Introduction to Mathematical Economics</h1>
-                    <p>Here you can add detailed content about the topic, including explanations, examples, and references.</p>
-                </div>
-            </main>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">The Governing Dynamics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container content">
+        <h1>Introduction to Mathematical Economics</h1>
+        <p>Here you can add detailed content about the topic, including explanations, examples, and references.</p>
     </div>
 
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Sections</h2>
+        <a href="index.html#fundamentals">Fundamentals</a>
+        <a href="index.html#intermediate">Intermediate Topics</a>
+        <a href="index.html#advanced">Advanced Topics</a>
+        <a href="index.html#toolbox">Math Toolbox</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
 
     <!-- Footer -->
     <footer>
