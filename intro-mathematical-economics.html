@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to the Governing Dynamics</title>
+    <title>Introduction to Mathematical Economics</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -22,14 +22,7 @@
             color: #333333;
             padding-top: 60px;
         }
-        
-        .left-align {
-            text-align: left !important; /* Force left alignment */
-            margin: 0 auto;
-            padding: 20px;
-            max-width: 960px;
-        }
-        
+
         h1 {
             font-family: 'Montserrat', sans-serif;
             color: #17a2b8;
@@ -53,6 +46,41 @@
             padding: 20px;
         }
 
+        .content {
+            margin-right: 300px; /* Reserve space for sidebar */
+        }
+
+        .sidebar {
+            position: fixed;
+            right: 0;
+            top: 60px;
+            width: 280px;
+            background-color: #ffffff;
+            border-left: 2px solid #17a2b8;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            color: #17a2b8;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #1a1a1a;
+            padding: 10px 0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            color: #ff6f61;
+        }
+
         footer {
             background-color: #1a1a1a;
             color: #ffffff;
@@ -72,8 +100,17 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 24px;
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-left: none;
+                box-shadow: none;
+                margin-top: 20px;
+            }
+
+            .content {
+                margin-right: 0;
             }
         }
     </style>
@@ -96,12 +133,19 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="left-align">
-        <h1 style="text-align: left;">Introduction to the Governing Dynamics</h1>
-        <p style="text-align: left;">
-            <em><strong>"I came to the position that mathematical analysis is not one of many ways of doing economic theory: It is the only way. Economic theory is mathematical analysis. Everything else is just pictures and talk." - R. E. Lucas, Jr. (2001)</strong></em>
-        </p>        
-        
+    <div class="container content">
+        <h1>Introduction to Mathematical Economics</h1>
+        <p>Here you can add detailed content about the topic, including explanations, examples, and references.</p>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Sections</h2>
+        <a href="index.html#fundamentals">Fundamentals</a>
+        <a href="index.html#intermediate">Intermediate Topics</a>
+        <a href="index.html#advanced">Advanced Topics</a>
+        <a href="index.html#toolbox">Math Toolbox</a>
+        <a href="index.html#contact">Contact</a>
     </div>
 
     <!-- Footer -->
