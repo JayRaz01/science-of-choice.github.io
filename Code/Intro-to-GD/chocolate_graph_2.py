@@ -13,7 +13,7 @@ y = custom_function(x)
 
 # Plot the function
 plt.plot(x, y, color="#8B4513")
-plt.title("A plot of Bob's utility with a maximum utility")
+plt.title("A plot of Mary's utility")
 plt.xlabel("Chunks of chocolate eaten")
 plt.ylabel("Utility")
 plt.grid(True)
